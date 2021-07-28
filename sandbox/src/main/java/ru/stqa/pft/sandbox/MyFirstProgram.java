@@ -5,6 +5,11 @@ import jdk.swing.interop.SwingInterOpUtils;
 public class MyFirstProgram {
 
 	public static void main(String[] args) {
-		System.out.println("Hello, world!");
+		String somebody = "world";
+		System.out.println("Hello, " +somebody+"!");
+
+		double l = 8.0;
+		double s = l * l;
+		System.out.println("Площаь квадрата со стороной "+ l + " = " + s);
 	}
 }
