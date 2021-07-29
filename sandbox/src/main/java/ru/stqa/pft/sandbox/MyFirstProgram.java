@@ -1,15 +1,27 @@
 package ru.stqa.pft.sandbox;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class MyFirstProgram {
 
 	public static void main(String[] args) {
-		String somebody = "world";
-		System.out.println("Hello, " +somebody+"!");
+		//System.out.println("Hello, world!");
+		hello("world");
+		double len = 5;
+		System.out.println("Площадь квадрата со стороной " +len +" = " +area(len));
 
-		double l = 8.0;
-		double s = l * l;
-		System.out.println("Площаь квадрата со стороной "+ l + " = " + s);
+		double a = 4;
+		double b = 6;
+		System.out.println("Площадь прямоугольника = " +area(a, b));
+	}
+
+	public static void hello(String somebody) {
+		System.out.println("Hello, " +somebody+ "!");
+	}
+
+	public static double area(double l) {
+		return  l*l;
+	}
+
+	public static double area(double a, double b) {
+		return a * b;
 	}
 }
